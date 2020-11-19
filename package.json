@@ -5,6 +5,7 @@
   "main": "",
   "scripts": {
     "build": "parcel build src/index.html -d dist",
+    "clean": "rm -rf ./dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html --port 4000 -d dist --no-cache --no-autoinstall"
   },
@@ -20,14 +21,19 @@
   "homepage": "https://github.com/bitrise-io/addons-insights-frontend#readme",
   "dependencies": {
     "@bitrise/bitkit": "^7.1.4",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
     "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "whatwg-fetch": "^3.5.0"
   },
   "devDependencies": {
+    "@types/node": "^14.14.8",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
+    "@types/whatwg-fetch": "0.0.33",
+    "parcel-bundler": "^1.12.4",
     "typescript": "^4.0.5"
   }
 }
