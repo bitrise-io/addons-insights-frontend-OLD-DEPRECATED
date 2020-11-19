@@ -1,0 +1,33 @@
+{
+  "name": "addons-insights-frontend",
+  "version": "0.0.1",
+  "description": "Frontend UI for Bitrise Insights add-on",
+  "main": "",
+  "scripts": {
+    "build": "parcel build src/index.html -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html --port 4000 -d dist --no-cache --no-autoinstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitrise-io/addons-insights-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bitrise-io/addons-insights-frontend/issues"
+  },
+  "homepage": "https://github.com/bitrise-io/addons-insights-frontend#readme",
+  "dependencies": {
+    "@bitrise/bitkit": "^7.1.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "typescript": "^4.0.5"
+  }
+}
