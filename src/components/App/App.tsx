@@ -1,17 +1,21 @@
 import * as React from 'react';
-import {AppLayout} from '@bitrise/bitkit';
+import { AddonFooter, AppLayout, AppLayoutBody, AppLayoutHeader, AppLayoutMain, Flex } from '@bitrise/bitkit';
 import dataAtIds from '../../dataAtIds.json';
-
-export const AuthContext = React.createContext({
-  accountId: '',
-  appId: '',
-  plan: '',
-  appTitle: '',
-  token: '',
-});
+import AppBeam from './AppBeam';
+import FilterSection from '../Filters/FilterSection';
 
 export default function App() {
   return (
-      <AppLayout backgroundColor="gray-1" data-trace-at-id={ dataAtIds.RootApp }>Hello</AppLayout>
+    <AppLayout backgroundColor="white" data-insights-at-id={dataAtIds.RootApp}>
+      <AppLayoutHeader>
+        <AppBeam></AppBeam>
+      </AppLayoutHeader>
+      <AppLayoutBody>
+        <FilterSection></FilterSection>
+      </AppLayoutBody>
+      <Flex paddingVertical="x16">
+        <AddonFooter addonName="Insights" />
+      </Flex>
+    </AppLayout>
   );
-};
+}
