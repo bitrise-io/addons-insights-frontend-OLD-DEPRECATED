@@ -19,3 +19,9 @@ After that you can start the service with the command below:
 ```
 npm run start
 ```
+
+Then open this URL in your browser:
+
+http://localhost:4000/APPSLUG
+
+To see APPSLUG app's insights.
