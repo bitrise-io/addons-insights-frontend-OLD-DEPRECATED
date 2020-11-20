@@ -15,8 +15,8 @@ const FilterBar = () => {
   const state = store.getState();
 
   return (
-    <Flex direction={'horizontal'}>
-      <Flex paddingHorizontal={'x10'}>
+    <Flex direction={'horizontal'} width="100%" container={true}>
+      <Flex width="25%">
         <DropdownFilter
           options={['master', 'develop']}
           selected={state.dashboardState.branch}
@@ -24,7 +24,7 @@ const FilterBar = () => {
           label={'Branch'}
         />
       </Flex>
-      <Flex>
+      <Flex width="25%">
         <DropdownFilter
           options={['primary', 'develop']}
           selected={state.dashboardState.workflow}
@@ -32,7 +32,7 @@ const FilterBar = () => {
           label={'Workflow'}
         />
       </Flex>
-      <Flex>
+      <Flex width="25%">
         <DropdownFilter
           options={['osx', 'linux']}
           selected={state.dashboardState.workflow}
@@ -40,7 +40,7 @@ const FilterBar = () => {
           label={'Stack'}
         />
       </Flex>
-      <Flex>
+      <Flex width="25%">
         <DropdownFilter
           options={['standard', 'elite']}
           selected={state.dashboardState.workflow}

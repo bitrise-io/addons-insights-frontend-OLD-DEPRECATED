@@ -24,7 +24,7 @@ const call = (api?: string) => async <R>(
     ...options.headers,
   };
 
-  const response = await fetch(`${api}${url}`, {
+  const response = await fetch(`${api}/${url}`, {
     ...options,
     body: JSON.stringify(body),
     headers: finalHeaders,
