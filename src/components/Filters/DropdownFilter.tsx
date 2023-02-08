@@ -35,7 +35,7 @@ const DropdownFilter = (props: Props) => {
             <Text key={selected} weight="bold" size="x3" color="grape-4">
               {props.label}
             </Text>
-            <Button innerRef={ref} level="secondary" onClick={() => setOpen(true)} width="16rem">
+            <Button innerRef={ref} level="secondary" onClick={() => setOpen(true)} width="20rem">
               <Flex alignChildrenHorizontal={'start'} grow={'x1'} direction={'horizontal'}>
                 <Text key={selected} weight="medium" size="x3" color="grape-4">
                   {selected === '' ? 'Choose ...' : selected}
